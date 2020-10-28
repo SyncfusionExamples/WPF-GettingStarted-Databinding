@@ -8,7 +8,17 @@ namespace Sfdomainupdown_binding
 {
     public class Employee
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
+        private string name;
+        private string email;
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
 }
